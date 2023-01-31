@@ -37,3 +37,7 @@ useEffect(() => {
 
 getAllMusics(needImage?: boolean)
 if needImage is true, return the image`s path.
+
+## Example
+
+https://github.com/KCH-clo/react-native-simple-audio-player#readme
