@@ -5,6 +5,8 @@
 
 This package currently supports android only.
 
+![preview3](https://user-images.githubusercontent.com/70503548/215699566-f9517bd6-0fd9-4019-baba-a248e6d70b02.jpg)
+
 ## Getting started
 
 `$ yarn add react-native-music-file-finder`
@@ -31,7 +33,7 @@ useEffect(() => {
 }, []);
 ```
 
-## Methods
+## Functions
 
-getAllMusics(needImage: boolean)
+getAllMusics(needImage?: boolean)
 if needImage is true, return the image`s path.
