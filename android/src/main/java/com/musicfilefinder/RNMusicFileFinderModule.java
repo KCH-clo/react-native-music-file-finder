@@ -124,13 +124,13 @@ public class RNMusicFileFinderModule extends ReactContextBaseJavaModule {
 
               if (embedPic != null) {
                 Bitmap bitmapImage = BitmapFactory.decodeByteArray(embedPic, 0, embedPic.length);
-                String imagePath = Environment.getExternalStorageDirectory() + "/" + id + ".jpg";
+                String imagePath = getCurrentActivity().getCacheDir() + "/" + id + ".jpg";
                 File outFile = new File(imagePath);
 
                 fos = new FileOutputStream(outFile);
                 fos.write(embedPic);
 
-                musicInfo.putString("imagePath", imagePath);
+                musicInfo.putString("imagePath", 'file://' + imagePath);
               }
             } catch (Exception e) {}
             finally {
