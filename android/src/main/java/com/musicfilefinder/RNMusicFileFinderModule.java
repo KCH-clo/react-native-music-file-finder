@@ -130,7 +130,7 @@ public class RNMusicFileFinderModule extends ReactContextBaseJavaModule {
                 fos = new FileOutputStream(outFile);
                 fos.write(embedPic);
 
-                musicInfo.putString("imagePath", 'file://' + imagePath);
+                musicInfo.putString("imagePath", "file://" + imagePath);
               }
             } catch (Exception e) {}
             finally {
